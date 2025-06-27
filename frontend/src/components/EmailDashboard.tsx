@@ -22,7 +22,6 @@ export default function EmailDashboard() {
   const [personMessages, setPersonMessages] = useState<Message[]>([])
   const [accounts, setAccounts] = useState<Account[]>([])
   const [loading, setLoading] = useState(true)
-  const [refreshing, setRefreshing] = useState(false)
   const [messagesLoading, setMessagesLoading] = useState(false)
   const [searchTerm, setSearchTerm] = useState('')
   const [selectedChannel, setSelectedChannel] = useState<'all' | 'email' | 'linkedin'>('all')
@@ -30,31 +29,16 @@ export default function EmailDashboard() {
   const [showPreview, setShowPreview] = useState(true)
 
   useEffect(() => {
-    loadDashboardData(true) // Initial full load
+    loadDashboardData(true) // Pass true for initial load
   }, [])
 
-  // Silent refresh when tab becomes active
-  useEffect(() => {
-    const handleVisibilityChange = () => {
-      if (!document.hidden) {
-        console.log('Tab active - silent refresh')
-        loadDashboardData(false, true) // silent = true
-      }
-    }
+  // Removed auto-refresh - only manual refresh button works now
 
-    document.addEventListener('visibilitychange', handleVisibilityChange)
-
-    return () => {
-      document.removeEventListener('visibilitychange', handleVisibilityChange)
-    }
-  }, [])
-
-  const loadDashboardData = async (isInitialLoad = false, silent = false) => {
+  const loadDashboardData = async (isInitialLoad = false) => {
     try {
+      // Only show loading screen on initial load
       if (isInitialLoad) {
         setLoading(true)
-      } else if (!silent) {
-        setRefreshing(true)
       }
 
       const [peopleData, accountsData] = await Promise.all([
@@ -70,8 +54,6 @@ export default function EmailDashboard() {
     } finally {
       if (isInitialLoad) {
         setLoading(false)
-      } else if (!silent) {
-        setRefreshing(false)
       }
     }
   }
@@ -118,7 +100,7 @@ export default function EmailDashboard() {
 
   const filteredPeople = people.filter(person => {
     const matchesSearch = person.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      (person.email && person.email.toLowerCase().includes(searchTerm.toLowerCase()))
+                         (person.email && person.email.toLowerCase().includes(searchTerm.toLowerCase()))
 
     const matchesChannel = selectedChannel === 'all' || person.channels.includes(selectedChannel)
 
@@ -152,14 +134,10 @@ export default function EmailDashboard() {
 
             <div className="flex items-center space-x-4">
               <button
-                onClick={() => loadDashboardData(false, false)}
+                onClick={loadDashboardData}
                 className="flex items-center space-x-2 px-4 py-2 bg-white border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors"
               >
-                {refreshing ? (
-                  <RefreshCw className="w-4 h-4 animate-spin" />
-                ) : (
-                  <RefreshCw className="w-4 h-4" />
-                )}
+                <RefreshCw className="w-4 h-4" />
                 <span>Refresh</span>
               </button>
             </div>
@@ -173,6 +151,7 @@ export default function EmailDashboard() {
           )}
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+
             {/* People List */}
             <div className="lg:col-span-1">
               <div className="bg-white rounded-lg shadow-lg overflow-hidden">
@@ -269,6 +248,7 @@ export default function EmailDashboard() {
             {/* Messages Panel */}
             <div className="lg:col-span-2">
               <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+
                 {selectedPerson ? (
                   <>
                     {/* Messages Header */}
@@ -330,7 +310,9 @@ export default function EmailDashboard() {
                         </div>
                       ) : (
                         <div className="divide-y divide-gray-200">
-                          {personMessages.map((message) => (
+                          {personMessages
+                            .filter(message => selectedChannel === 'all' || message.channel === selectedChannel)
+                            .map((message) => (
                             <div key={message.id} className="p-4 hover:bg-gray-50 transition-colors">
                               <div className="flex items-start space-x-3">
                                 <div className="flex-shrink-0 mt-1">
@@ -375,6 +357,7 @@ export default function EmailDashboard() {
                     </div>
                   </>
                 ) : (
+                  /* No Selection State */
                   <div className="p-12 text-center text-gray-500">
                     <MessageSquare className="w-16 h-16 mx-auto mb-4 text-gray-300" />
                     <h3 className="text-lg font-medium text-gray-900 mb-2">
@@ -443,7 +426,6 @@ export default function EmailDashboard() {
               </div>
             </div>
           </div>
-
         </div>
       </div>
     </div>

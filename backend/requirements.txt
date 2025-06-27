@@ -6,3 +6,4 @@ pydantic==2.4.2
 tortoise-orm[asyncpg]==0.20.0
 supabase==2.0.2
 python-multipart==0.0.6
+rapidfuzz==3.0.0
