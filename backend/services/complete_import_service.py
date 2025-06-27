@@ -112,7 +112,7 @@ class CompleteImportService:
                 "accept": "application/json"
             }
 
-            async with httpx.AsyncClient(timeout=60.0) as client:
+            async with httpx.AsyncClient() as client:
                 response = await client.get(
                     f"{unipile_service.base_url}/emails",
                     headers=headers,

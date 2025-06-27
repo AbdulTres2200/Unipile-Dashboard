@@ -336,6 +336,7 @@ async def manual_oauth_success(request: Request):
         }
 
         await store_connected_account(account_info, "default_user")
+        # await import_all_real_messages(account_info["id"], account_info["provider"])
         return {"success": True, "account": account_info, "is_real_account": False}
 
 
@@ -460,6 +461,7 @@ async def sync_accounts_with_unipile():
 
 
 async def store_connected_account(account_data: dict, user_id: str):
+    from services.complete_import_service import complete_import_service
     """Store account information after successful connection"""
     print(f"💾 Storing account: {account_data}")
 
@@ -489,7 +491,7 @@ async def store_connected_account(account_data: dict, user_id: str):
         print(f"✅ Account stored successfully: {account_data['provider']} - {account_id}")
 
         # 🚀 IMPORT ALL REAL MESSAGES IMMEDIATELY
-        await import_all_real_messages(account_id, account_data["provider"])
+        await complete_import_service.import_all_messages(account_id, account_data["provider"])
 
         return account_info
 

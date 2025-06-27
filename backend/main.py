@@ -31,7 +31,7 @@ app.add_middleware(
 
 # Include routes
 app.include_router(auth_router, prefix="/api/auth", tags=["Authentication"])
-app.include_router(webhook_router, prefix="/api/webhooks", tags=["Webhooks"])
+app.include_router(webhook_router, prefix="/api", tags=["Webhooks"])
 app.include_router(message_router, prefix="/api/messages", tags=["Messages"])
 app.include_router(messages_people_router, prefix="/api", tags=["People"])
 
