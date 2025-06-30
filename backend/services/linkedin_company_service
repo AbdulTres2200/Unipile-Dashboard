@@ -1,0 +1,155 @@
+import requests
+import json
+import re
+from typing import List, Dict, Optional
+from urllib.parse import urlparse
+
+class LinkedInCompanyService:
+    def __init__(self, api_key: str, base_url: str, account_id: str):
+        self.api_key = api_key
+        self.base_url = base_url.rstrip('/')
+        self.account_id = account_id
+        self.headers = {
+            "accept": "application/json",
+            "X-API-KEY": self.api_key
+        }
+
+    def extract_company_identifier(self, linkedin_url: str) -> Optional[str]:
+        """Extract company identifier from LinkedIn URL"""
+        try:
+            # Remove trailing slash and extract company identifier
+            # https://www.linkedin.com/company/trestech/ -> trestech
+            pattern = r'linkedin\.com/company/([^/?]+)'
+            match = re.search(pattern, linkedin_url)
+            if match:
+                return match.group(1)
+            return None
+        except Exception as e:
+            print(f"❌ Error extracting identifier from {linkedin_url}: {e}")
+            return None
+
+    def get_company_details(self, company_identifier: str) -> Optional[Dict]:
+        """Get company details from Unipile API"""
+        try:
+            url = f"{self.base_url}/linkedin/company/{company_identifier}"
+            params = {"account_id": self.account_id}
+            
+            print(f"🔍 Fetching company details for: {company_identifier}")
+            
+            response = requests.get(url, headers=self.headers, params=params, timeout=30)
+            
+            if response.status_code == 200:
+                return response.json()
+            else:
+                print(f"❌ API error for {company_identifier}: {response.status_code} - {response.text}")
+                return None
+                
+        except Exception as e:
+            print(f"❌ Failed to get company details for {company_identifier}: {e}")
+            return None
+
+    def extract_important_fields(self, company_data: Dict) -> Dict:
+        """Extract only important fields from company data"""
+        if not company_data:
+            return {}
+            
+        return {
+            "id": company_data.get("id"),
+            "name": company_data.get("name"),
+            "public_identifier": company_data.get("public_identifier"),
+            "profile_url": company_data.get("profile_url"),
+            "website": company_data.get("website"),
+            "tagline": company_data.get("tagline"),
+            "description": company_data.get("description"),
+            "industry": company_data.get("industry", []),
+            "employee_count": company_data.get("employee_count"),
+            "employee_count_range": company_data.get("employee_count_range"),
+            "followers_count": company_data.get("followers_count"),
+            "locations": company_data.get("locations", []),
+            "logo": company_data.get("logo"),
+            "logo_large": company_data.get("logo_large"),
+            "claimed": company_data.get("claimed"),
+            "organization_type": company_data.get("organization_type"),
+            "is_following": company_data.get("is_following"),
+            "messaging_enabled": company_data.get("messaging", {}).get("is_enabled", False)
+        }
+
+    def process_companies_from_urls(self, linkedin_urls: List[str]) -> List[Dict]:
+        """Process multiple LinkedIn company URLs and return company details"""
+        results = []
+        
+        for url in linkedin_urls:
+            print(f"\n🏢 Processing: {url}")
+            
+            # Extract company identifier
+            identifier = self.extract_company_identifier(url)
+            if not identifier:
+                print(f"❌ Could not extract company identifier from: {url}")
+                results.append({
+                    "url": url,
+                    "error": "Could not extract company identifier",
+                    "company_data": {}
+                })
+                continue
+            
+            # Get company details
+            company_data = self.get_company_details(identifier)
+            
+            # Extract important fields
+            important_data = self.extract_important_fields(company_data)
+            
+            result = {
+                "url": url,
+                "company_identifier": identifier,
+                "success": bool(company_data),
+                "company_data": important_data
+            }
+            
+            if company_data:
+                print(f"✅ Successfully retrieved data for: {important_data.get('name', identifier)}")
+            
+            results.append(result)
+        
+        return results
+
+    def save_to_json(self, results: List[Dict], output_file: str = "companies_data.json"):
+        """Save results to JSON file"""
+        try:
+            with open(output_file, 'w', encoding='utf-8') as f:
+                json.dump(results, f, indent=2, ensure_ascii=False)
+            print(f"\n💾 Results saved to: {output_file}")
+        except Exception as e:
+            print(f"❌ Error saving to JSON: {e}")
+
+    def process_and_save(self, linkedin_urls: List[str], output_file: str = "companies_data.json") -> List[Dict]:
+        """Process URLs and save to JSON in one step"""
+        results = self.process_companies_from_urls(linkedin_urls)
+        self.save_to_json(results, output_file)
+        return results
+
+# Usage Example
+if __name__ == "__main__":
+    # Configuration
+    API_KEY = "bj0rJRff.vtknTodKH/h46wpfi9k+AjT6/jT7jPtsgR3tpHC4a4Q="
+    BASE_URL = "https://api14.unipile.com:14422/api/v1"
+    ACCOUNT_ID = "7QOnPnwlQx2-gPL7lYFa9A"
+    
+    # Initialize service
+    company_service = LinkedInCompanyService(API_KEY, BASE_URL, ACCOUNT_ID)
+    
+    # Example URLs
+    company_urls = [
+        "https://www.linkedin.com/company/trestech/",
+        "https://www.linkedin.com/company/google/",
+        "https://www.linkedin.com/company/microsoft/",
+        "https://www.linkedin.com/company/openai/"
+    ]
+    
+    # Process and save
+    results = company_service.process_and_save(company_urls, "linkedin_companies.json")
+    
+    # Print summary
+    print(f"\n📊 Summary:")
+    print(f"Total URLs processed: {len(results)}")
+    print(f"Successful: {len([r for r in results if r['success']])}")
+    print(f"Failed: {len([r for r in results if not r['success']])}")

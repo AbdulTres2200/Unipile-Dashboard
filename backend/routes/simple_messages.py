@@ -1,6 +1,7 @@
 from fastapi import APIRouter, HTTPException
 from services.complete_import_service import complete_import_service
 from services.supabase_service import supabase_service
+import requests
 
 router = APIRouter()
 

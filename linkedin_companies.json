@@ -1,0 +1,1035 @@
+[
+  {
+    "url": "https://www.linkedin.com/company/trestech/",
+    "company_identifier": "trestech",
+    "success": true,
+    "company_data": {
+      "id": "91694172",
+      "name": "TresTech s.r.o.",
+      "public_identifier": "trestech",
+      "profile_url": "https://www.linkedin.com/company/trestech/",
+      "website": "www.trestech.cz",
+      "tagline": "Spolehlivá síť, silná infrastruktura, bezpečnost v každém spojení.",
+      "description": null,
+      "industry": [
+        "Technology, Information and Internet"
+      ],
+      "employee_count": 9,
+      "employee_count_range": {
+        "from": 11,
+        "to": 50
+      },
+      "followers_count": 38,
+      "locations": [],
+      "logo": "https://media.licdn.com/dms/image/v2/D4E0BAQHv9uFdGRXc2g/company-logo_200_200/company-logo_200_200/0/1695680753709/trestech_logo?e=1756944000&v=beta&t=ZUlF9ehDZ8Gb94bDlVmrVzHAeNKO-yQpYDk3VWYXwFU",
+      "logo_large": "https://media.licdn.com/dms/image/v2/D4E0BAQHv9uFdGRXc2g/company-logo_400_400/company-logo_400_400/0/1695680753709/trestech_logo?e=1756944000&v=beta&t=xBo96JODiEuAZH29yDMJ9OsWggzrtQs4YurDE2YH8hE",
+      "claimed": true,
+      "organization_type": null,
+      "is_following": false,
+      "messaging_enabled": true
+    }
+  },
+  {
+    "url": "https://www.linkedin.com/company/google/",
+    "company_identifier": "google",
+    "success": true,
+    "company_data": {
+      "id": "1441",
+      "name": "Google",
+      "public_identifier": "google",
+      "profile_url": "https://www.linkedin.com/company/google/",
+      "website": "https://goo.gle/3DLEokh",
+      "tagline": null,
+      "description": "A problem isn't truly solved until it's solved for all. Googlers build products that help create opportunities for everyone, whether down the street or across the globe. Bring your insight, imagination and a healthy disregard for the impossible. Bring everything that makes you unique. Together, we can build for everyone.\n\nCheck out our career opportunities at goo.gle/3DLEokh",
+      "industry": [
+        "Software Development"
+      ],
+      "employee_count": 310852,
+      "employee_count_range": {
+        "from": 10001,
+        "to": null
+      },
+      "followers_count": 37754779,
+      "locations": [
+        {
+          "is_headquarter": false,
+          "city": "London",
+          "country": "GB",
+          "street": [
+            "St Giles High Street"
+          ],
+          "postalCode": "WC2H 8AG",
+          "area": "England"
+        },
+        {
+          "is_headquarter": false,
+          "city": "Dublin",
+          "country": "IE",
+          "street": [
+            "Barrow Street"
+          ],
+          "area": "County Dublin"
+        },
+        {
+          "is_headquarter": false,
+          "city": "Bogota",
+          "country": "CO",
+          "street": [
+            "Carrera 11A 94-45"
+          ],
+          "postalCode": "110221",
+          "area": "Bogota, D.C."
+        },
+        {
+          "is_headquarter": false,
+          "city": "Singapore",
+          "country": "SG",
+          "street": [
+            "3 Pasir Panjang Rd"
+          ],
+          "postalCode": "118484",
+          "area": "Singapore"
+        },
+        {
+          "is_headquarter": false,
+          "city": "Miguel Hidalgo",
+          "country": "MX",
+          "street": [
+            "Montes Urales"
+          ],
+          "postalCode": "11000",
+          "area": "CDMX"
+        },
+        {
+          "is_headquarter": false,
+          "city": "Tel Aviv-Yafo",
+          "country": "IL",
+          "street": [
+            "Yigal Allon 98"
+          ],
+          "postalCode": "67891",
+          "area": "Tel Aviv"
+        },
+        {
+          "is_headquarter": false,
+          "city": "Toronto",
+          "country": "CA",
+          "street": [
+            "111 Richmond St W"
+          ],
+          "postalCode": "M5H 2G4",
+          "area": "ON"
+        },
+        {
+          "is_headquarter": false,
+          "city": "Kitchener",
+          "country": "CA",
+          "street": [
+            "51 Breithaupt St"
+          ],
+          "postalCode": "N2H 5G5",
+          "area": "ON"
+        },
+        {
+          "is_headquarter": false,
+          "city": "Las Condes",
+          "country": "CL",
+          "street": [
+            "Avenida Costanera Sur"
+          ],
+          "postalCode": "7550000",
+          "area": "Santiago Metropolitan"
+        },
+        {
+          "is_headquarter": false,
+          "city": "Milan",
+          "country": "IT",
+          "street": [
+            "Via Federico Confalonieri, 4"
+          ],
+          "postalCode": "20124",
+          "area": "Lomb."
+        },
+        {
+          "is_headquarter": false,
+          "city": "Taguig City",
+          "country": "PH",
+          "street": [
+            "5th Ave"
+          ],
+          "area": "National Capital Region"
+        },
+        {
+          "is_headquarter": false,
+          "city": "Sydney",
+          "country": "AU",
+          "street": [
+            "48 Pirrama Rd"
+          ],
+          "postalCode": "2009",
+          "area": "NSW"
+        },
+        {
+          "is_headquarter": false,
+          "city": "Melbourne",
+          "country": "AU",
+          "street": [
+            "90 Collins St"
+          ],
+          "postalCode": "3000",
+          "area": "VIC"
+        },
+        {
+          "is_headquarter": false,
+          "city": "Zurich",
+          "country": "CH",
+          "street": [
+            "Brandschenkestrasse 110"
+          ],
+          "postalCode": "8002",
+          "area": "ZH"
+        },
+        {
+          "is_headquarter": false,
+          "city": "Paris",
+          "country": "FR",
+          "street": [
+            "8 Rue de Londres"
+          ],
+          "postalCode": "75009",
+          "area": "IdF"
+        },
+        {
+          "is_headquarter": false,
+          "city": "Buenos Aires City",
+          "country": "AR",
+          "street": [
+            "Avenida Alicia Moreau de Justo 350"
+          ],
+          "postalCode": "1107",
+          "area": "Buenos Aires Autonomous City"
+        },
+        {
+          "is_headquarter": false,
+          "city": "Hamburg",
+          "country": "DE",
+          "street": [
+            "ABC-Strasse 19"
+          ],
+          "postalCode": "20354",
+          "area": "HH"
+        },
+        {
+          "is_headquarter": false,
+          "city": "Berlin",
+          "country": "DE",
+          "street": [
+            "Unter den Linden 14"
+          ],
+          "postalCode": "10117",
+          "area": "BE"
+        },
+        {
+          "is_headquarter": false,
+          "city": "Munich",
+          "country": "DE",
+          "street": [
+            "Erika-Mann-Strasse 33"
+          ],
+          "postalCode": "80636",
+          "area": "BY"
+        },
+        {
+          "is_headquarter": false,
+          "city": "Warsaw",
+          "country": "PL",
+          "street": [
+            "ulica Emilii Plater 53"
+          ],
+          "postalCode": "00-125",
+          "area": "MA"
+        },
+        {
+          "is_headquarter": false,
+          "city": "Amsterdam",
+          "country": "NL",
+          "street": [
+            "Claude Debussylaan 34"
+          ],
+          "postalCode": "1082 MD",
+          "area": "North Holland"
+        },
+        {
+          "is_headquarter": false,
+          "city": "Madrid",
+          "country": "ES",
+          "street": [
+            "Plaza Pablo Ruiz Picasso"
+          ],
+          "postalCode": "28046",
+          "area": "Community of Madrid"
+        },
+        {
+          "is_headquarter": false,
+          "city": "Madrid",
+          "country": "ES",
+          "street": [
+            "Plaza Pablo Ruiz Picasso"
+          ],
+          "postalCode": "28020",
+          "area": "Community of Madrid"
+        },
+        {
+          "is_headquarter": false,
+          "city": "Atlanta",
+          "country": "US",
+          "street": [
+            "10 10th St NE"
+          ],
+          "postalCode": "30309",
+          "area": "GA"
+        },
+        {
+          "is_headquarter": false,
+          "city": "Cambridge",
+          "country": "US",
+          "street": [
+            "355 Main St"
+          ],
+          "postalCode": "02142",
+          "area": "MA"
+        },
+        {
+          "is_headquarter": true,
+          "city": "Mountain View",
+          "country": "US",
+          "street": [
+            "1600 Amphitheatre Parkway"
+          ],
+          "postalCode": "94043",
+          "area": "CA"
+        },
+        {
+          "is_headquarter": false,
+          "city": "San Bruno",
+          "country": "US",
+          "street": [
+            "901 Cherry Ave"
+          ],
+          "postalCode": "94066",
+          "area": "CA"
+        },
+        {
+          "is_headquarter": false,
+          "city": "San Francisco",
+          "country": "US",
+          "street": [
+            "345 Spear St"
+          ],
+          "postalCode": "94105",
+          "area": "CA"
+        },
+        {
+          "is_headquarter": false,
+          "city": "Austin",
+          "country": "US",
+          "street": [
+            "9606 N Mopac Expy"
+          ],
+          "postalCode": "78759",
+          "area": "TX"
+        },
+        {
+          "is_headquarter": false,
+          "city": "Irvine",
+          "country": "US",
+          "street": [
+            "19510 Jamboree Rd"
+          ],
+          "postalCode": "92612",
+          "area": "CA"
+        },
+        {
+          "is_headquarter": false,
+          "city": "Los Angeles",
+          "country": "US",
+          "street": [
+            "340 Main St"
+          ],
+          "postalCode": "90291",
+          "area": "CA"
+        },
+        {
+          "is_headquarter": false,
+          "city": "Chicago",
+          "country": "US",
+          "street": [
+            "320 N Morgan St"
+          ],
+          "postalCode": "60607",
+          "area": "IL"
+        },
+        {
+          "is_headquarter": false,
+          "city": "Boulder",
+          "country": "US",
+          "street": [
+            "2590 Pearl St"
+          ],
+          "postalCode": "80302",
+          "area": "CO"
+        },
+        {
+          "is_headquarter": false,
+          "city": "Frisco",
+          "country": "US",
+          "street": [
+            "6175 Main St"
+          ],
+          "postalCode": "75034",
+          "area": "TX"
+        },
+        {
+          "is_headquarter": false,
+          "city": "Ann Arbor",
+          "country": "US",
+          "street": [
+            "2300 Traverwood Dr"
+          ],
+          "postalCode": "48105",
+          "area": "MI"
+        },
+        {
+          "is_headquarter": false,
+          "city": "Washington",
+          "country": "US",
+          "street": [
+            "25 Massachusetts Ave NW"
+          ],
+          "postalCode": "20001",
+          "area": "DC"
+        },
+        {
+          "is_headquarter": false,
+          "city": "Reston",
+          "country": "US",
+          "street": [
+            "1875 Explorer St"
+          ],
+          "postalCode": "20190",
+          "area": "VA"
+        },
+        {
+          "is_headquarter": false,
+          "city": "Kirkland",
+          "country": "US",
+          "street": [
+            "777 6th St S"
+          ],
+          "postalCode": "98033",
+          "area": "WA"
+        },
+        {
+          "is_headquarter": false,
+          "city": "Seattle",
+          "country": "US",
+          "street": [
+            "601 N 34th St"
+          ],
+          "postalCode": "98103",
+          "area": "WA"
+        },
+        {
+          "is_headquarter": false,
+          "city": "New York",
+          "country": "US",
+          "street": [
+            "111 8th Ave"
+          ],
+          "postalCode": "10011",
+          "area": "NY"
+        },
+        {
+          "is_headquarter": false,
+          "city": "Stockholm",
+          "country": "SE",
+          "street": [
+            "Kungsbron 2"
+          ],
+          "postalCode": "111 22",
+          "area": "Stockholm County"
+        },
+        {
+          "is_headquarter": false,
+          "city": "Sao Paulo",
+          "country": "BR",
+          "street": [
+            "Avenida Brigadeiro Faria Lima, 3477"
+          ],
+          "postalCode": "04538-133",
+          "area": "SP"
+        },
+        {
+          "is_headquarter": false,
+          "city": "Wan Chai",
+          "country": "HK",
+          "street": [
+            "2 Matheson St"
+          ],
+          "area": "Hong Kong"
+        },
+        {
+          "is_headquarter": false,
+          "city": "Hyderabad",
+          "country": "IN",
+          "street": [
+            "13"
+          ],
+          "postalCode": "500084",
+          "area": "TS"
+        },
+        {
+          "is_headquarter": false,
+          "city": "Mumbai",
+          "country": "IN",
+          "street": [
+            "3 Bandra Kurla Complex Road"
+          ],
+          "postalCode": "400051",
+          "area": "Maharashtra"
+        },
+        {
+          "is_headquarter": false,
+          "city": "Bengaluru",
+          "country": "IN",
+          "street": [
+            "Old Madras Road"
+          ],
+          "postalCode": "560016",
+          "area": "Karnataka"
+        },
+        {
+          "is_headquarter": false,
+          "city": "Bengaluru",
+          "country": "IN",
+          "street": [
+            "3 Swamy Vivekananda Road"
+          ],
+          "postalCode": "560016",
+          "area": "Karnataka"
+        },
+        {
+          "is_headquarter": false,
+          "city": "Gurugram",
+          "country": "IN",
+          "street": [
+            "15"
+          ],
+          "postalCode": "122001",
+          "area": "HR"
+        }
+      ],
+      "logo": "https://media.licdn.com/dms/image/v2/C4D0BAQHiNSL4Or29cg/company-logo_200_200/company-logo_200_200/0/1631311446380?e=1756944000&v=beta&t=03YZycX94O4oPNTtMOqf3p_acmkBCy_o9ZY6xbvYk7A",
+      "logo_large": "https://media.licdn.com/dms/image/v2/C4D0BAQHiNSL4Or29cg/company-logo_400_400/company-logo_400_400/0/1631311446380?e=1756944000&v=beta&t=tZ2zrWut0GApG0zuQhhzhtTOLySsBOo0c64adavX5o4",
+      "claimed": true,
+      "organization_type": null,
+      "is_following": false,
+      "messaging_enabled": false
+    }
+  },
+  {
+    "url": "https://www.linkedin.com/company/microsoft/",
+    "company_identifier": "microsoft",
+    "success": true,
+    "company_data": {
+      "id": "1035",
+      "name": "Microsoft",
+      "public_identifier": "microsoft",
+      "profile_url": "https://www.linkedin.com/company/microsoft/",
+      "website": "https://news.microsoft.com/",
+      "tagline": null,
+      "description": "Every company has a mission. What's ours? To empower every person and every organization to achieve more. We believe technology can and should be a force for good and that meaningful innovation contributes to a brighter world in the future and today. Our culture doesn’t just encourage curiosity; it embraces it. Each day we make progress together by showing up as our authentic selves. We show up with a learn-it-all mentality. We show up cheering on others, knowing their success doesn't diminish our own. We show up every day open to learning our own biases, changing our behavior, and inviting in differences. Because impact matters. \n\nMicrosoft operates in 190 countries and is made up of approximately 228,000 passionate employees worldwide.",
+      "industry": [
+        "Software Development"
+      ],
+      "employee_count": 234884,
+      "employee_count_range": {
+        "from": 10001,
+        "to": null
+      },
+      "followers_count": 25704097,
+      "locations": [
+        {
+          "is_headquarter": false,
+          "city": "Bratislava",
+          "country": "SK",
+          "street": [
+            "Pradiareň 1900",
+            "Svätoplukova 2A"
+          ],
+          "postalCode": "821 08"
+        },
+        {
+          "is_headquarter": false,
+          "city": "Reading",
+          "country": "GB",
+          "street": [
+            "Thames Valley Park Drive"
+          ],
+          "postalCode": "RG6 1WG",
+          "area": "Berkshire"
+        },
+        {
+          "is_headquarter": false,
+          "city": "Москва",
+          "country": "RU",
+          "street": [
+            "Ул. Крылатская, 17"
+          ],
+          "postalCode": "121614"
+        },
+        {
+          "is_headquarter": false,
+          "city": "Bogota",
+          "country": "CO",
+          "street": [
+            "Calle 92 # 11 – 51"
+          ]
+        },
+        {
+          "is_headquarter": false,
+          "city": "Singapore",
+          "country": "SG",
+          "street": [
+            "182 Cecil Street",
+            "#13-01 Frasers Tower"
+          ],
+          "postalCode": "069547"
+        },
+        {
+          "is_headquarter": false,
+          "city": "Vienna",
+          "country": "AT",
+          "street": [
+            "Am Europlatz 3"
+          ],
+          "postalCode": "1120"
+        },
+        {
+          "is_headquarter": false,
+          "city": "Santiago",
+          "country": "CL",
+          "street": [
+            "Av. Vitacura 6844"
+          ]
+        },
+        {
+          "is_headquarter": false,
+          "city": "Milan",
+          "country": "IT",
+          "street": [
+            "Viale Pasubio, 21"
+          ],
+          "postalCode": "20154",
+          "area": "Lombardy"
+        },
+        {
+          "is_headquarter": false,
+          "city": "North Sydney",
+          "country": "AU",
+          "street": [
+            "1 Denison Street "
+          ],
+          "postalCode": "2060",
+          "area": "NSW"
+        },
+        {
+          "is_headquarter": false,
+          "city": "רעננה",
+          "country": "IL",
+          "street": [
+            "רחוב הפנינה 2"
+          ],
+          "postalCode": "43107"
+        },
+        {
+          "is_headquarter": false,
+          "city": "Auckland",
+          "country": "NZ",
+          "street": [
+            "22 Viaduct Harbour Avenue"
+          ]
+        },
+        {
+          "is_headquarter": false,
+          "city": "Espoo",
+          "country": "FI",
+          "street": [
+            "Keilalahdentie 2-4"
+          ],
+          "postalCode": "02150"
+        },
+        {
+          "is_headquarter": false,
+          "city": "Dubai",
+          "country": "AE",
+          "street": [
+            "Sheikh Zayed Road",
+            "Dubai Internet City, Building No 8"
+          ],
+          "postalCode": "52244"
+        },
+        {
+          "is_headquarter": false,
+          "city": "Cairo",
+          "country": "EG",
+          "street": [
+            "Kilo 28, Cairo/Alex Desert Road",
+            "Abou Rawash"
+          ]
+        },
+        {
+          "is_headquarter": false,
+          "city": "București",
+          "country": "RO",
+          "street": [
+            "Bulevardul Iuliu Maniu nr. 6P",
+            "Clădirea Campus 6.2"
+          ],
+          "postalCode": "061103"
+        },
+        {
+          "is_headquarter": false,
+          "city": "München",
+          "country": "DE",
+          "street": [
+            "Walter-Gropius-Straße 5"
+          ],
+          "postalCode": "80807"
+        },
+        {
+          "is_headquarter": false,
+          "city": "Warszawa",
+          "country": "PL",
+          "street": [
+            "Al. Jerozolimskie 195a"
+          ],
+          "postalCode": "02-222"
+        },
+        {
+          "is_headquarter": false,
+          "city": "中国",
+          "country": "CN",
+          "street": [
+            "海淀区，丹棱街5号"
+          ],
+          "postalCode": "100080"
+        },
+        {
+          "is_headquarter": false,
+          "city": "Jongno-gu",
+          "country": "KR",
+          "street": [
+            "50, Jongro 1-gil"
+          ],
+          "area": "Seoul"
+        },
+        {
+          "is_headquarter": false,
+          "city": "Schiphol",
+          "country": "NL",
+          "street": [
+            "Evert van de Beekstraat 354"
+          ],
+          "postalCode": "1118 CZ",
+          "area": "North Holland"
+        },
+        {
+          "is_headquarter": false,
+          "city": "Oslo",
+          "country": "NO",
+          "street": [
+            "Dronning Eufemia gate 71"
+          ],
+          "postalCode": "0194"
+        },
+        {
+          "is_headquarter": false,
+          "city": "Riyadh",
+          "country": "SA",
+          "street": [
+            "The Business Gate, Building A2 Airport Road, Cordobah"
+          ],
+          "postalCode": "11552"
+        },
+        {
+          "is_headquarter": false,
+          "city": "Pozuelo de Alarcón",
+          "country": "ES",
+          "street": [
+            "Paseo del Club Deportivo, 1",
+            "Centro Empresarial La Finca - Edificio 1"
+          ],
+          "postalCode": "28223"
+        },
+        {
+          "is_headquarter": true,
+          "city": "Redmond",
+          "country": "US",
+          "street": [
+            "1 Microsoft Way"
+          ],
+          "postalCode": "98052",
+          "area": "Washington"
+        },
+        {
+          "is_headquarter": false,
+          "city": "Sao Paulo",
+          "country": "BR",
+          "street": [
+            "Av. President Juscelino Kubitscheck, 1909"
+          ],
+          "postalCode": "04551-065"
+        },
+        {
+          "is_headquarter": false,
+          "city": "Stockholm",
+          "country": "SE",
+          "street": [
+            "Regeringsgatan 25"
+          ],
+          "postalCode": "111 53"
+        },
+        {
+          "is_headquarter": false,
+          "city": "เขตปทุมวัน กรุงเทพฯ",
+          "country": "TH",
+          "street": [
+            "87/2 ถนนวิทยุ แขวงลุมพินี",
+            "ตึก CRC Tower ออลซีซันส์เพลส"
+          ],
+          "postalCode": "10330"
+        },
+        {
+          "is_headquarter": false,
+          "city": "İstanbul",
+          "country": "TR",
+          "street": [
+            "Aydın Sokak No:7",
+            "Bellevue Residences, Levent Mahallesi"
+          ],
+          "postalCode": "34340"
+        },
+        {
+          "is_headquarter": false,
+          "city": "2800 Kongens Lyngby",
+          "country": "DK",
+          "street": [
+            "Kanalvej 7"
+          ]
+        },
+        {
+          "is_headquarter": false,
+          "city": "Minato-ku",
+          "country": "JP",
+          "street": [
+            "2-16-3 Konan"
+          ],
+          "postalCode": "108-0075",
+          "area": "Tokyo"
+        },
+        {
+          "is_headquarter": false,
+          "city": "Zaventem",
+          "country": "BE",
+          "street": [
+            "Luchthavenlaan 1k"
+          ],
+          "postalCode": "1930",
+          "area": "Flemish Region"
+        },
+        {
+          "is_headquarter": false,
+          "city": "Leopardstown",
+          "country": "IE",
+          "street": [
+            "One Microsoft Place",
+            "South County Business Park"
+          ],
+          "postalCode": "18 D18",
+          "area": "Dublin"
+        },
+        {
+          "is_headquarter": false,
+          "city": "Kuala Lumpur",
+          "country": "MY",
+          "street": [
+            "No. 211, Jalan Tun Sambanthan",
+            "Menara Shell"
+          ],
+          "postalCode": "50470"
+        },
+        {
+          "is_headquarter": false,
+          "city": "Jakarta",
+          "country": "ID",
+          "street": [
+            "Jl. Jend. Sudirman Kav. 52-53",
+            "Jakarta Stock Exchange Building Tower II"
+          ],
+          "postalCode": "12190"
+        },
+        {
+          "is_headquarter": false,
+          "city": "Del Álvaro Obregón",
+          "country": "MX",
+          "street": [
+            "Av. Vasco de Quiroga 3200",
+            "Col. Centro de Ciudad Santa Fe"
+          ],
+          "postalCode": "01210"
+        },
+        {
+          "is_headquarter": false,
+          "city": "Johannesburg",
+          "country": "ZA",
+          "street": [
+            "3012 William Nicol Drive"
+          ],
+          "postalCode": "2191",
+          "area": "Gauteng"
+        },
+        {
+          "is_headquarter": false,
+          "city": "Mississauga",
+          "country": "CA",
+          "street": [
+            "1950 Meadowvale Blvd"
+          ],
+          "postalCode": "L5N 8L9",
+          "area": "Ontario"
+        },
+        {
+          "is_headquarter": false,
+          "city": "Makati City",
+          "country": "PH",
+          "street": [
+            "Ayala Avenue cor Edsa, Brgy. San Lorenzo,",
+            "11F, One Ayala East Tower "
+          ],
+          "postalCode": "1223"
+        },
+        {
+          "is_headquarter": false,
+          "city": "Zürich",
+          "country": "CH",
+          "street": [
+            "8058 Zürich-Flughafen",
+            "The Circle 02"
+          ]
+        },
+        {
+          "is_headquarter": false,
+          "city": "Buenos Aires",
+          "country": "AR",
+          "street": [
+            "1106 Federal Capital",
+            "Bouchard 710"
+          ]
+        },
+        {
+          "is_headquarter": false,
+          "city": "Issy-les-Moulineaux",
+          "country": "FR",
+          "street": [
+            "39, Quai du Président Roosevelt"
+          ],
+          "postalCode": "92130",
+          "area": "Île-de-France"
+        },
+        {
+          "is_headquarter": false,
+          "city": "Lisboa",
+          "country": "PT",
+          "street": [
+            "Rua do Fogo de Santelmo, Lote 2.07.02"
+          ],
+          "postalCode": "1990 – 110"
+        },
+        {
+          "is_headquarter": false,
+          "city": "Hong Kong",
+          "country": "HK",
+          "street": [
+            "100 Cyberport Road",
+            "15/F, Cyberport 2"
+          ]
+        },
+        {
+          "is_headquarter": false,
+          "city": "Xinyi District",
+          "country": "TW",
+          "street": [
+            "Zhongxiao East Road Section 5 No. 68"
+          ],
+          "area": "Taipei City"
+        },
+        {
+          "is_headquarter": false,
+          "city": "Gurgaon",
+          "country": "IN",
+          "street": [
+            "DLF Building No.5 (Epitome), Cyber City, DLF Phase III"
+          ],
+          "postalCode": "122002"
+        }
+      ],
+      "logo": "https://media.licdn.com/dms/image/v2/D560BAQH32RJQCl3dDQ/company-logo_100_100/B56ZYQ0mrGGoAU-/0/1744038948046/microsoft_logo?e=1756944000&v=beta&t=3mKgkG9PPXkJUHkvfex7HcMDUpTNxe87NTc8TaqdJrA",
+      "logo_large": "https://media.licdn.com/dms/image/v2/D560BAQH32RJQCl3dDQ/company-logo_200_200/B56ZYQ0mrGGoAM-/0/1744038948046/microsoft_logo?e=1756944000&v=beta&t=SrF7BixYPKNs304Mq9yuuAEJG7S7MaQ_i56dTRlv3QA",
+      "claimed": true,
+      "organization_type": null,
+      "is_following": false,
+      "messaging_enabled": false
+    }
+  },
+  {
+    "url": "https://www.linkedin.com/company/openai/",
+    "company_identifier": "openai",
+    "success": true,
+    "company_data": {
+      "id": "11130470",
+      "name": "OpenAI",
+      "public_identifier": "openai",
+      "profile_url": "https://www.linkedin.com/company/openai/",
+      "website": "https://openai.com/",
+      "tagline": "Creating safe AGI that benefits all of humanity.",
+      "description": "OpenAI is an AI research and deployment company dedicated to ensuring that general-purpose artificial intelligence benefits all of humanity. AI is an extremely powerful tool that must be created with safety and human needs at its core. OpenAI is dedicated to putting that alignment of interests first — ahead of profit.\n\nTo achieve our mission, we must encompass and value the many different perspectives, voices, and experiences that form the full spectrum of humanity. Our investment in diversity, equity, and inclusion is ongoing, executed through a wide range of initiatives, and championed and supported by leadership.\n\nAt OpenAI, we believe artificial intelligence has the potential to help people solve immense global challenges, and we want the upside of AI to be widely shared. Join us in shaping the future of technology.",
+      "industry": [
+        "Research Services"
+      ],
+      "employee_count": 5957,
+      "employee_count_range": {
+        "from": 201,
+        "to": 500
+      },
+      "followers_count": 7247968,
+      "locations": [
+        {
+          "is_headquarter": true,
+          "city": "San Francisco",
+          "country": "US",
+          "street": [],
+          "postalCode": "94110",
+          "description": "Headquarters",
+          "area": "CA"
+        }
+      ],
+      "logo": "https://media.licdn.com/dms/image/v2/D560BAQHpzXbqSyR74A/company-logo_400_400/B56ZT8EYB8HsAY-/0/1739395793272/openai_logo?e=1756944000&v=beta&t=-l2M3Hqz5-vDMC_zGIsjGZ49_exobXNcThYdQsh2Ovk",
+      "logo_large": "https://media.licdn.com/dms/image/v2/D560BAQHpzXbqSyR74A/company-logo_100_100/B56ZT8EYB8HsAQ-/0/1739395793272/openai_logo?e=1756944000&v=beta&t=AK-It6NkTTkaMuswjqVRm-QBlG90Mw9Svzp7OFB7wCI",
+      "claimed": true,
+      "organization_type": null,
+      "is_following": false,
+      "messaging_enabled": false
+    }
+  }
+]
